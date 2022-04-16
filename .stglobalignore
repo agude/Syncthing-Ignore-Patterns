@@ -1,16 +1,10 @@
-// ╔═══════════════════════════════════╗
-// ║ CHECK IT AGAIN BEFORE YOU USE IT! ║
-// ╚═══════════════════════════════════╝
-// .stglobalignore
-
-
 // ╔══════════════════════════════════╗
 // ║ Operating system generated files ║
 // ╚══════════════════════════════════╝
 // ┌─────────────┐
 // │ Apple macOS │
 // └─────────────┘
-(?d).DS_Store
+(?d)(?i).DS_Store
 (?d).localized
 (?d)._*
 (?d).Icon*
@@ -56,60 +50,70 @@
 // ┌─────────────────┐
 // │ Adobe Lightroom │
 // └─────────────────┘
-*Previews.lrdata root-pixels.db
+(?d)*Previews.lrdata root-pixels.db
 
 // ┌─────────┐
 // │ Dropbox │
 // └─────────┘
-.dropbox
-.dropbox.attr
+(?d).dropbox
+(?d).dropbox.attr
 
 // ┌────────────────────────┐
 // │ Firefox & Chrom(ium│e) │
 // └────────────────────────┘
-*.part
-*.crdownload
+(?d)*.part
+(?d)*.crdownload
+
+// ┌──────┐
+// │ Kate │
+// └──────┘
+(?d).*.kate-swp
+
+// ┌─────────────┐
+// │ LibreOffice │
+// └─────────────┘
+(?d).~lock.*#
 
 // ┌──────────────────┐
 // │ Microsoft Office │
 // └──────────────────┘
-~*
+(?d)~*
 
 // ┌───────────────────────────┐
 // │ Parallels Desktop for Mac │
 // └───────────────────────────┘
-.parallels-vm-directory
+(?d).parallels-vm-directory
 
 // ┌──────────────┐
 // │ Resilio Sync │
 // └──────────────┘
-.sync
-*.bts
-*.!Sync
-.SyncID
-.SyncIgnore
-.SyncArchive
-*.SyncPart
-*.SyncTemp
-*.SyncOld
+(?d).sync
+(?d)*.bts
+(?d)*.!Sync
+(?d).SyncID
+(?d).SyncIgnore
+(?d).SyncArchive
+(?d)*.SyncPart
+(?d)*.SyncTemp
+(?d)*.SyncOld
 
 // ┌────────────────────────────┐
 // │ Temporary and backup files │
 // └────────────────────────────┘
-*.temporary
-*.tmp
-*._mp
-*.old
-*.syd
-*.dir
-*.gid
-*.chk
-*.dmp
-*.nch
-.*.swp
-*~
+(?d)*.temporary
+(?d)*.tmp
+(?d)*._mp
+(?d)*.old
+(?d)*.syd
+(?d)*.dir
+(?d)*.gid
+(?d)*.chk
+(?d)*.dmp
+(?d)*.nch
+(?d).*.swp
+(?d)*~
 
 // ┌─────┐
 // │ Vim │
 // └─────┘
-*.*.sw[a-p]
+(?d)*.*.sw[a-p]
