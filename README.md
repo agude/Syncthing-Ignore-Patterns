@@ -22,3 +22,5 @@ More Infos about ignore patterns from official syncthing website: [Syncthing ign
     ```
 
 ---
+
+Forked from  [M-Mono/Syncthing-Ignore-Patterns](https://github.com/M-Mono/Syncthing-Ignore-Patterns)
