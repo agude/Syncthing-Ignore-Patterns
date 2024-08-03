@@ -23,4 +23,5 @@ More Infos about ignore patterns from official syncthing website: [Syncthing ign
 
 ---
 
-Forked from  [M-Mono/Syncthing-Ignore-Patterns](https://github.com/M-Mono/Syncthing-Ignore-Patterns)
+Forked from [M-Mono/Syncthing-Ignore-Patterns](https://github.com/M-Mono/Syncthing-Ignore-Patterns)
+and then from [iNeedADoctor/Syncthing-Ignore-Patterns](https://codeberg.org/iNeedADoctor/Syncthing-Ignore-Patterns).
