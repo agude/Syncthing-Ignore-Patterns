@@ -99,3 +99,7 @@
 
 // git
 (?d).git
+
+
+// Jekyll built site
+(?d)_site
