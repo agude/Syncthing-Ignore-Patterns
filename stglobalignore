@@ -1,117 +1,86 @@
-// ╔══════════════════════════════════╗
-// ║ Operating system generated files ║
-// ╚══════════════════════════════════╝
-// ┌─────────────┐
-// │ Apple macOS │
-// └─────────────┘
-(?d)(?i).DS_Store
-(?d)(?i).localized
-(?d)(?i)._*
-(?d)(?i).Icon*
-(?d)(?i).fseventsd
-(?d)(?i).Spotlight-V100
-(?d)(?i).DocumentRevisions-V100
-(?d)(?i).TemporaryItems
-(?d)(?i).Trashes
-(?d)(?i).Trash-1000
-(?d)(?i).iCloud
+//  Operating system generated files
 
-// ┌──────────────────┐
-// │ GNU/Linux & UN*X │
-// └──────────────────┘
-(?d)(?i).directory
-(?d)(?i).Trash-*
+//  Apple macOS
+(?d).DS_Store
+(?d).localized
+(?d)._*
+(?d).Icon*
+(?d).fseventsd
+(?d).Spotlight-V100
+(?d).DocumentRevisions-V100
+(?d).TemporaryItems
+(?d).Trashes
+(?d).Trash-1000
+(?d).iCloud
 
-// ┌───────────────────┐
-// │ Microsoft Windows │
-// └───────────────────┘
-(?d)(?i)desktop.ini
-(?d)(?i)ehthumbs.db
-(?d)(?i)Thumbs.db
-(?d)(?i)$RECYCLE.BIN
-(?d)(?i)System Volume Information
+//  GNU/Linux & UN*X
+(?d).directory
+(?d).Trash-*
 
-// ┌──────────┐
-// │ QNAP QTS │
-// └──────────┘
-(?d)(?i).AppleDB
-(?d)(?i).@_thumb
-(?d)(?i).@__thumb
+// Ubuntu snap files
+(?d)snap
 
-// ┌──────────────┐
-// │ Synology DSM │
-// └──────────────┘
-(?d)(?i)@eaDir
+//  Microsoft Windows
+(?d)desktop.ini
+(?d)ehthumbs.db
+(?d)Thumbs.db
+(?d)$RECYCLE.BIN
+(?d)System Volume Information
+
+//  QNAP QTS
+(?d).AppleDB
+(?d).@_thumb
+(?d).@__thumb
+
+//  Synology DSM
+(?d)@eaDir
 
 
-// ╔═════════════════════════════╗
-// ║ Application generated files ║
-// ╚═════════════════════════════╝
-// ┌─────────────────┐
-// │ Adobe Lightroom │
-// └─────────────────┘
-(?d)(?i)*Previews.lrdata root-pixels.db
+//  Application generated files
 
-// ┌──────────────────┐
-// │ Autodesk AutoCAD │
-// └──────────────────┘
-(?d)(?i)*.dwl
-(?d)(?i)*.dwl2
-(?d)(?i)*.sv$
+//  Adobe Lightroom
+(?d)*Previews.lrdata root-pixels.db
 
-// ┌─────┐
-// │ Dia │
-// └─────┘
-(?d)(?i)*.dia~
+//  Autodesk AutoCAD
+(?d)*.dwl
+(?d)*.dwl2
+(?d)*.sv$
 
-// ┌─────────┐
-// │ Dropbox │
-// └─────────┘
-(?d)(?i).dropbox
-(?d)(?i).dropbox.attr
+//  Dia
+(?d)*.dia~
 
-// ┌────────────────────────┐
-// │ Firefox & Chrom(ium│e) │
-// └────────────────────────┘
-(?d)(?i)*.part
-(?d)(?i)*.crdownload
+//  Dropbox
+(?d).dropbox
+(?d).dropbox.attr
 
-// ┌──────┐
-// │ Kate │
-// └──────┘
-(?d)(?i).*.kate-swp
+//  Firefox & Chrom(iume)
+(?d)*.part
+(?d)*.crdownload
 
-// ┌─────────────┐
-// │ LibreOffice │
-// └─────────────┘
-(?d)(?i).~lock.*#
+//  Kate
+(?d).*.kate-swp
 
-// ┌──────────────────┐
-// │ Microsoft Office │
-// └──────────────────┘
-(?d)(?i)~*
+//  LibreOffice
+(?d).~lock.*#
 
-// ┌───────────────────────────┐
-// │ Parallels Desktop for Mac │
-// └───────────────────────────┘
-(?d)(?i).parallels-vm-directory
+//  Microsoft Office
+(?d)~*
 
-// ┌──────────────┐
-// │ Resilio Sync │
-// └──────────────┘
-(?d)(?i).sync
-(?d)(?i)*.bts
-(?d)(?i)*.!Sync
-(?d)(?i).SyncID
-(?d)(?i).SyncIgnore
-(?d)(?i).SyncArchive
-(?d)(?i)*.SyncPart
-(?d)(?i)*.SyncTemp
-(?d)(?i)*.SyncOld
+//  Parallels Desktop for Mac
+(?d).parallels-vm-directory
 
-// ┌────────────────────────────┐
-// │ Temporary and backup files │
-// └────────────────────────────┘
+//  Resilio Sync
+(?d).sync
+(?d)*.bts
+(?d)*.!Sync
+(?d).SyncID
+(?d).SyncIgnore
+(?d).SyncArchive
+(?d)*.SyncPart
+(?d)*.SyncTemp
+(?d)*.SyncOld
+
+//  Temporary and backup files
 (?d)(?i)*.temporary
 (?d)(?i)*.tmp
 (?d)(?i)*._mp
@@ -125,7 +94,5 @@
 (?d)(?i).*.swp
 (?d)(?i)*~
 
-// ┌─────┐
-// │ Vim │
-// └─────┘
-(?d)(?i)*.*.sw[a-p]
+//  Vim
+(?d)*.*.sw[a-p]
