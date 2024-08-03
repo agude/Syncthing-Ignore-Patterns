@@ -98,4 +98,4 @@
 (?d)*.*.sw[a-p]
 
 // git
-.git
+(?d).git
