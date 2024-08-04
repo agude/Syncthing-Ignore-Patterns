@@ -60,7 +60,11 @@
 (?d).dropbox
 (?d).dropbox.attr
 
+// Edge
+(?d)Edge
+
 //  Firefox & Chrom(iume)
+(?d)Firefox
 (?d)*.part
 (?d)*.crdownload
 
@@ -98,15 +102,16 @@
 (?d)*.SyncTemp
 (?d)*.SyncOld
 
-//  The Syncthing config folder
+// Spotify
+(?d)AppData/Local/Spotify/Storage
+
+// Syncthing, otherwise we have sync thing trying to modify itself
 (?d)Syncthing
 
 //  Vim
 (?d)*.*.sw[a-p]
 
 //  Temporary, Caches, Logs, etc.
-
-//  Temporary and backup files
 (?d)(?i)*.temporary
 (?d)(?i)*.tmp
 (?d)(?i)*._mp
@@ -119,12 +124,26 @@
 (?d)(?i)*.nch
 (?d)(?i).*.swp
 (?d)(?i)*~
-
-// Caches
+// Exclude all temporary and cache files
+(?d)*temp*
+(?d)*Temp*
+(?d)*TEMP*
 (?d)*cache*
 (?d)*Cache*
-(?d)*.cache
-(?d)*.Cache
+(?d)*CACHE*
+(?d)*log*
+(?d)*Log*
+(?d)*LOG*
+(?d)*crashreport*
+(?d)*CrashReport*
+(?d)*CRASHREPORT*
+(?d)*.tmp
+(?d)*.TMP
+(?d)*.temp
+(?d)*.TEMP
+(?d)*.bak
+(?d)*.BAK
 
-//  Log files
-(?d)*.log
+//  Lock files
+(?d)lockfile
+(?d)Lockfile
