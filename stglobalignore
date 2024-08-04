@@ -1,3 +1,10 @@
+/s Things synced elsewhere
+(?d)Google Docs
+(?d)Google Drive
+
+//Files we don't want
+(?d)stable-diffusion-webui
+
 //  Operating system generated files
 
 //  Apple macOS
@@ -57,11 +64,22 @@
 (?d)*.part
 (?d)*.crdownload
 
+//  git
+(?d).git
+
+//  Jekyll built site
+(?d)_site
+
 //  Kate
 (?d).*.kate-swp
 
 //  LibreOffice
 (?d).~lock.*#
+
+//  NVIDIA cache files
+(?d)GLCache
+(?d)DXCache
+(?d)ComputeCache
 
 //  Microsoft Office
 (?d)~*
@@ -80,6 +98,14 @@
 (?d)*.SyncTemp
 (?d)*.SyncOld
 
+//  The Syncthing config folder
+(?d)Syncthing
+
+//  Vim
+(?d)*.*.sw[a-p]
+
+//  Temporary, Caches, Logs, etc.
+
 //  Temporary and backup files
 (?d)(?i)*.temporary
 (?d)(?i)*.tmp
@@ -94,11 +120,11 @@
 (?d)(?i).*.swp
 (?d)(?i)*~
 
-//  Vim
-(?d)*.*.sw[a-p]
+// Caches
+(?d)*cache*
+(?d)*Cache*
+(?d)*.cache
+(?d)*.Cache
 
-// git
-(?d).git
-
-// Jekyll built site
-(?d)_site
+//  Log files
+(?d)*.log
