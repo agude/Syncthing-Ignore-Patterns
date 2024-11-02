@@ -104,6 +104,7 @@
 
 // Spotify
 (?d)AppData/Local/Spotify/Storage
+(?d)Packages/Spotify**
 
 // Syncthing, otherwise we have sync thing trying to modify itself
 (?d)Syncthing
