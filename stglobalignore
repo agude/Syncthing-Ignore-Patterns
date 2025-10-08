@@ -68,6 +68,11 @@
 (?d).~lock.*#
 (?d)~*
 
+// NVIDIA cache files
+(?d)GLCache
+(?d)DXCache
+(?d)ComputeCache
+
 // Parallels Desktop for Mac
 (?d).parallels-vm-directory
 
@@ -139,18 +144,19 @@
 (?d)docker-compose.yml
 (?d)Dockerfile
 
-// Temporary, Caches, Logs, etc. (More Precise)
+// Temporary, Caches, Logs, etc. (More Precise & Safe)
 (?i).cache/
 (?i)cache/
 (?i)logs/
 (?i)log/
 (?i)temp/
 (?i)tmp/
-(?d)*.log
-(?d)*.tmp
-(?d)*.bak
-(?d)*.old
-(?d)*.swp
-(?d)*~
+(?i)*crashreport*
+(?i)*.log
+(?i)*.tmp
+(?i)*.bak
+(?i)*.old
+(?i)*.swp
+(?i)*~
 (?d)lockfile
 (?d)Lockfile
