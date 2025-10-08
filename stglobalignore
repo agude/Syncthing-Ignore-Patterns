@@ -2,12 +2,11 @@
 (?d)Google Docs
 (?d)Google Drive
 
-//Files we don't want
+// Files we don't want
 (?d)stable-diffusion-webui
 
-//  Operating system generated files
-
-//  Apple macOS
+// Operating system generated files
+// Apple macOS
 (?d).DS_Store
 (?d).localized
 (?d)._*
@@ -20,78 +19,59 @@
 (?d).Trash-1000
 (?d).iCloud
 
-//  GNU/Linux & UN*X
+// GNU/Linux & UN*X
 (?d).directory
 (?d).Trash-*
-
-// Ubuntu snap files
 (?d)snap
 
-//  Microsoft Windows
+// Microsoft Windows
 (?d)desktop.ini
 (?d)ehthumbs.db
 (?d)Thumbs.db
 (?d)$RECYCLE.BIN
 (?d)System Volume Information
 
-//  QNAP QTS
+// NAS Specific
 (?d).AppleDB
 (?d).@_thumb
 (?d).@__thumb
-
-//  Synology DSM
 (?d)@eaDir
 
+// Application generated files
+// Adobe Lightroom
+(?d)*Previews.lrdata
+(?d)root-pixels.db
 
-//  Application generated files
-
-//  Adobe Lightroom
-(?d)*Previews.lrdata root-pixels.db
-
-//  Autodesk AutoCAD
+// Autodesk AutoCAD
 (?d)*.dwl
 (?d)*.dwl2
 (?d)*.sv$
 
-//  Dia
+// Dia
 (?d)*.dia~
 
-//  Dropbox
+// Dropbox
 (?d).dropbox
 (?d).dropbox.attr
 
-// Edge
+// Browsers (Edge, Firefox, Chrome)
 (?d)Edge
-
-//  Firefox & Chrom(iume)
 (?d)Firefox
 (?d)*.part
 (?d)*.crdownload
 
-//  git
-(?d).git
-
-//  Jekyll built site
-(?d)_site
-
-//  Kate
+// Kate & Vim
 (?d).*.kate-swp
+(?d)*.*.sw[a-p]
 
-//  LibreOffice
+// LibreOffice & Microsoft Office
 (?d).~lock.*#
-
-//  NVIDIA cache files
-(?d)GLCache
-(?d)DXCache
-(?d)ComputeCache
-
-//  Microsoft Office
 (?d)~*
 
-//  Parallels Desktop for Mac
+// Parallels Desktop for Mac
 (?d).parallels-vm-directory
 
-//  Resilio Sync
+// Resilio Sync
 (?d).sync
 (?d)*.bts
 (?d)*.!Sync
@@ -106,45 +86,71 @@
 (?d)AppData/Local/Spotify/Storage
 (?d)Packages/Spotify**
 
-// Syncthing, otherwise we have sync thing trying to modify itself
-(?d)Syncthing
+// Syncthing
+(?d).stfolder
+(?d).stversions
 
-//  Vim
-(?d)*.*.sw[a-p]
+// Programming, Git, & Compilation
+// Git (CRITICAL)
+(?d).git
 
-//  Temporary, Caches, Logs, etc.
-(?d)(?i)*.temporary
-(?d)(?i)*.tmp
-(?d)(?i)*._mp
-(?d)(?i)*.old
-(?d)(?i)*.syd
-(?d)(?i)*.dir
-(?d)(?i)*.gid
-(?d)(?i)*.chk
-(?d)(?i)*.dmp
-(?d)(?i)*.nch
-(?d)(?i).*.swp
-(?d)(?i)*~
-// Exclude all temporary and cache files
-(?d)*temp*
-(?d)*Temp*
-(?d)*TEMP*
-(?d)*cache*
-(?d)*Cache*
-(?d)*CACHE*
-(?d)*log*
-(?d)*Log*
-(?d)*LOG*
-(?d)*crashreport*
-(?d)*CrashReport*
-(?d)*CRASHREPORT*
+// IDE Settings
+(?d).vscode
+(?d).idea
+
+// Node.js
+(?d)node_modules
+(?d).npm
+(?d)yarn.lock
+(?d)pnpm-lock.yaml
+
+// Python
+(?d)venv
+(?d).venv
+(?d)__pycache__
+(?d)*.pyc
+(?d).pytest_cache
+(?d).mypy_cache
+
+// Java / Maven / Gradle
+(?d)target
+(?d).gradle
+(?d)build
+
+// Go / PHP / Ruby
+(?d)vendor
+
+// Rust
+(?d)target
+
+// Compiled Binaries / General Build
+(?d)dist
+(?d)bin
+(?d)obj
+
+// Jekyll
+(?d)_site
+
+// Virtual Machines & Containers
+(?d)*.vdi
+(?d)*.vmdk
+(?d)*.vhd
+(?d)*.pvm
+(?d)docker-compose.yml
+(?d)Dockerfile
+
+// Temporary, Caches, Logs, etc. (More Precise)
+(?i).cache/
+(?i)cache/
+(?i)logs/
+(?i)log/
+(?i)temp/
+(?i)tmp/
+(?d)*.log
 (?d)*.tmp
-(?d)*.TMP
-(?d)*.temp
-(?d)*.TEMP
 (?d)*.bak
-(?d)*.BAK
-
-//  Lock files
+(?d)*.old
+(?d)*.swp
+(?d)*~
 (?d)lockfile
 (?d)Lockfile
