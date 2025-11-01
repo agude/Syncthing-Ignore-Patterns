@@ -160,3 +160,12 @@
 (?i)*~
 (?d)lockfile
 (?d)Lockfile
+
+// Windows AppData
+(?d)*UnistoreDB*
+(?d)UsrClass.dat
+(?d)*Windows.Search*
+(?d)*Windows.StartMenu*
+(?d)journalBS.jour.dat
+(?d)VRDevicesInfo.data
+(?d)NTUSER.DAT
